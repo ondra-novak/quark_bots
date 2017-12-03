@@ -1,0 +1,5 @@
+/tmp
+/*.design.json
+/*.design.deps
+/*.design.h
+/*.design.cpp
