@@ -10,3 +10,6 @@
 [submodule "src/simpleServer"]
 	path = src/simpleServer
 	url = https://github.com/ondra-novak/simpleServer.git
+[submodule "src/shared"]
+	path = src/shared
+	url = https://github.com/ondra-novak/ondra_shared.git
