@@ -5,7 +5,8 @@ set(designs designdocs/index.design.cpp designdocs/trades.design.cpp designdocs/
 add_custom_command(OUTPUT ${designs} COMMAND $(MAKE) -C designdocs all ) 
 add_custom_target(buildDesigns COMMAND $(MAKE) -C designdocs all  )
 add_custom_target(cleanDesigns COMMAND $(MAKE) -C designdocs clean-designs)
-add_executable (qbots ${qbots_SRC} ${designs})
+#add_executable (qbots ${qbots_SRC} ${designs})
+add_executable (qbots ${qbots_SRC} )
 add_dependencies(qbots buildDesigns)  
 target_link_libraries (qbots LINK_PUBLIC simpleRpcServer simpleServer jsonrpc_client couchit imtjson pthread)
  
